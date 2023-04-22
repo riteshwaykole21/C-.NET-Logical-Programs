@@ -11,6 +11,7 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("1 : Swap Of Two Numbers");
+            Console.WriteLine("2 : Fibonacci Series Program");
             Console.WriteLine("Enter A Option");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch(Option)
@@ -18,6 +19,10 @@ namespace LogicalPrograms
                 case 1:
                     SwapNumbers swapNumbers = new SwapNumbers();
                     swapNumbers.Numbers();
+                    break;
+                case 2:
+                    FibonacciSeries fibonacciSeries = new FibonacciSeries();    
+                    fibonacciSeries.Numbers();  
                     break;
             }
             Console.ReadLine();
